@@ -42,8 +42,8 @@ function Allproducts({clicking}){
       data.map((ele,i)=>{
         return(
           <>
-      <Col xs={12} lg={4} xl={4} className=" col-xs-12  mt-4">
-          <Card key={i} style={{width:" 20rem",height:"40rem"}}  className="cards" className="mb-2">
+      <Col xs={12} lg={4} xl={4} className=" col-xs-12 col-cards  mt-4">
+          <Card key={i}  className="cards" className="mb-2">
         <center>  <Card.Title>{ele.title}</Card.Title></center>
         <center>  <Card.Img variant="top" style={{ 
                            width: '15rem',

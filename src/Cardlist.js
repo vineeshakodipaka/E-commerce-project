@@ -14,9 +14,9 @@ function Cardlist({ cards, handlechange }) {
         <center>
           <Row>
             {cards.map((ele, i) => {
-              return (
-                <Col xs={12} lg={4} xl={4} className="mt-4 col-xs-12">
-                  <Card style={{ width: '20rem', height: '40rem' }} className="cards mb-2">
+              return ( 
+                <Col xs={12} lg={4} xl={4} className="mt-4 col-xs-12 col-cards">
+                  <Card className="cards mb-2">
                     <center>
                       <Card.Title>{ele.title}</Card.Title>
                     </center>
