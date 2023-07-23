@@ -19,13 +19,13 @@ function Productlist({clicking}){
   
 
 <center>
-      <Row xs={12}>
+      <Row className="m-3"   xs={12}  style={{fontSize:"20px"}}>
          {
       data.map((ele,i)=>{
         return(
           <>
-      <Col xs={12} lg={4} xl={4} className=" col-xs-12 mt-4  col-cards">
-          <Card key={i} className="cards" className="mb-2">
+      <Col xs={12} lg={4} xl={3} className=" col-xs-12 mt-4  col-cards">
+          <Card key={i} className="cards" className="mb-2 p-3">
         <center>  <Card.Title>{ele.title}</Card.Title></center>
         <center>  <Card.Img
         className="card-img"
@@ -39,13 +39,13 @@ function Productlist({clicking}){
           <center>  <h3><Ratingicon r={ele.rating}/></h3></center>
               <Card.Text>
               <Card.Text>
-              <p>Original Price:₹{ele.orprice}</p>
-              <p>Offered Price:₹<del>{ele.ofprice}</del></p>
+              <p  style={{fontSize:"20px"}}>Original Price:₹{ele.orprice}</p>
+              <p style={{fontSize:"20px"}}>Offered Price:₹<del>{ele.ofprice}</del></p>
               <Percentage or={ele.orprice} of={ele.ofprice}/>
               </Card.Text>
               </Card.Text>
-              <Button variant="primary"  onClick={()=>clicking(ele)}>Add To Card</Button>&nbsp;&nbsp;&nbsp;&nbsp;
-              <Button as="input"  type="button" value="Delete" 
+              <Button className="mt-2" variant="primary"  onClick={()=>clicking(ele)}>Add To Card</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <Button  className="mt-2"  as="input"  type="button" value="Delete" 
           onClick={()=>Delete(ele.id)} />
             </Card.Body>
         

@@ -37,13 +37,13 @@ function Allproducts({clicking}){
 
 
 <center>
-      <Row xs={12} className="m-3">
+      <Row xs={12} className="m-3"  style={{fontSize:"20px"}}>
          {
       data.map((ele,i)=>{
         return(
           <>
       <Col xs={12} lg={4} xl={3} className=" col-xs-12 col-cards  mt-4">
-          <Card key={i}  className="cards" className="mb-2">
+          <Card key={i}  className="cards m-3" className="mb-2 p-3">
         <center>  <Card.Title>{ele.title}</Card.Title></center>
         <center>  <Card.Img className="card-img" variant="top" style={{ 
                         width:"50%"  }} 
@@ -61,8 +61,8 @@ function Allproducts({clicking}){
               <Percentage or={ele.orprice} of={ele.ofprice}/>
               </Card.Text>
               </Card.Text>
-              <Button variant="primary"  onClick={()=>clicking(ele)}>Add To Card</Button>&nbsp;&nbsp;&nbsp;&nbsp;
-              <Button as="input"  type="button" value="Delete" 
+              <Button  className="mt-2"  variant="primary"  onClick={()=>clicking(ele)}>Add To Card</Button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <Button className="mt-2"  as="input"  type="button" value="Delete" 
           onClick={()=>Delete(ele.id)} />
             </Card.Body>
         
