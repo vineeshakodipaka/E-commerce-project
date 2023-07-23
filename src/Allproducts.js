@@ -37,18 +37,16 @@ function Allproducts({clicking}){
 
 
 <center>
-      <Row xs={12}>
+      <Row xs={12} className="m-3">
          {
       data.map((ele,i)=>{
         return(
           <>
-      <Col xs={12} lg={4} xl={4} className=" col-xs-12 col-cards  mt-4">
+      <Col xs={12} lg={4} xl={3} className=" col-xs-12 col-cards  mt-4">
           <Card key={i}  className="cards" className="mb-2">
         <center>  <Card.Title>{ele.title}</Card.Title></center>
-        <center>  <Card.Img variant="top" style={{ 
-                           width: '15rem',
-                            height: '15rem',
-                            margin: '15px',}} 
+        <center>  <Card.Img className="card-img" variant="top" style={{ 
+                          }} 
                         src={ele.image}
             /> </center> 
             <Card.Body>

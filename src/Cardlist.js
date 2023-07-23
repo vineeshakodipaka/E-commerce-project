@@ -21,12 +21,9 @@ function Cardlist({ cards, handlechange }) {
                     </center>
                     <center>
                       <Card.Img
+                      className="card-img"
                         variant="top"
-                        style={{
-                          width: '15rem',
-                          height: '15rem',
-                          margin: '15px',
-                        }}
+                       
                         src={ele.image}
                       />
                     </center>

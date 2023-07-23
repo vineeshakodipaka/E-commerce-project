@@ -9,7 +9,7 @@ function Navlist({length}){
  
    
    
-    <Navbar  style={{background:"rgb(244 51 151)"}} expand="lg" className="navbar">
+    <Navbar  style={{background:"rgb(244 51 151)"}} expand="lg" className="navbar p-3">
    
         <Navbar.Brand href="#home" className="brand" style={{color:"pink",fontFamily: "Sofia"}}>
          Amazon

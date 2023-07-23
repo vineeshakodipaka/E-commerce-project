@@ -27,10 +27,9 @@ function Productlist({clicking}){
       <Col xs={12} lg={4} xl={4} className=" col-xs-12 mt-4  col-cards">
           <Card key={i} className="cards" className="mb-2">
         <center>  <Card.Title>{ele.title}</Card.Title></center>
-        <center>  <Card.Img variant="top" style={{ 
-                           width: '15rem',
-                            height: '15rem',
-                            margin: '15px',}} 
+        <center>  <Card.Img
+        className="card-img"
+         variant="top" 
                         src={ele.image}
             /> </center> 
             <Card.Body>
