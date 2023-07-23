@@ -1,7 +1,7 @@
 import React, { useState ,useEffect} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Link, useNavigate } from "react-router-dom";
-import {Route,Routes} from 'react-router-dom'
+
 import Productlist from './Productlist'
 import Navlist from './Navlist'
 import Cardlist from './Cardlist'
