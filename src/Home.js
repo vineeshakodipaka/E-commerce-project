@@ -31,7 +31,7 @@ function Home() {
 const handlechange=(dta,x)=>{
   const i=cards.indexOf(dta);
   const arr=cards;
-  // arr[i].Quantity+=x;
+  arr[i].Quantity+=x;
   if (arr[i].Quantity == 0) {
     arr[i].Quantity = 1; // set the minimum quantity to 1
     alert('Quantity cannot be less than 1'); // display an alert message
