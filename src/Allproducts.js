@@ -36,7 +36,7 @@ function Allproducts({clicking}){
     <>
 
 <Container>
-      <Row >
+      <Row xs={12}>
          {
       data.map((ele,i)=>{
         return(
