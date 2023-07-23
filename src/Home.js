@@ -1,6 +1,5 @@
-import React, { useState ,useEffect} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import Productlist from './Productlist'
 import Navlist from './Navlist'
@@ -9,7 +8,7 @@ import Allproducts from './Allproducts'
 import Addproducts from './Addproducts'
 function Home() {
   const [cards, setCards] = useState([]);
-  const navigate=useNavigate()
+  
 
 
   const clicking = (ele) => {
