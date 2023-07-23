@@ -10,7 +10,7 @@ function Navlist({length}){
    
    
     <Navbar  style={{background:"rgb(244 51 151)"}} expand="lg" className="navbar">
-      <Container>
+   
         <Navbar.Brand href="#home" className="brand" style={{color:"pink",fontFamily: "Sofia"}}>
          Amazon
         </Navbar.Brand>
@@ -51,7 +51,7 @@ function Navlist({length}){
           </Nav>
 
         </Navbar.Collapse>
-      </Container>
+  
     </Navbar>
 
     </>
