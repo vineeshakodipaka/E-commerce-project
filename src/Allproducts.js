@@ -46,7 +46,7 @@ function Allproducts({clicking}){
           <Card key={i}  className="cards" className="mb-2">
         <center>  <Card.Title>{ele.title}</Card.Title></center>
         <center>  <Card.Img className="card-img" variant="top" style={{ 
-                          }} 
+                        width:"50%"  }} 
                         src={ele.image}
             /> </center> 
             <Card.Body>
