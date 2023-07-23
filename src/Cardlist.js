@@ -10,7 +10,6 @@ function Cardlist({ cards, handlechange }) {
 
   return (
     <>
-      <Container>
         <center>
           <Row>
             {cards.map((ele, i) => {
@@ -60,7 +59,7 @@ function Cardlist({ cards, handlechange }) {
             </h3>
           </Row>
         </center>
-      </Container>
+  
     </>
   );
 }

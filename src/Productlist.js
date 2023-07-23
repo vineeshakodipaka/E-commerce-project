@@ -17,7 +17,7 @@ function Productlist({clicking}){
   return(
     <>
   
-<Container>
+
 <center>
       <Row xs={12}>
          {
@@ -60,7 +60,7 @@ function Productlist({clicking}){
     </Row>
     </center>
 
-    </Container>
+    
     
     </>
   )
